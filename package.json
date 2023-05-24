@@ -11,6 +11,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "axios": "^1.1.2",
         "laravel-mix": "^6.0.49",
         "laravel-vite-plugin": "^0.7.5",
         "mix-tailwindcss": "^1.3.0",
