@@ -1,5 +1,5 @@
-const mix = require('laravel-mix');
-require('mix-tailwindcss');
+// const mix = require('laravel-mix');
+// require('mix-tailwindcss');
 
-mix.postCss('resources/css/app.css', 'public/css')
-  .tailwind();
+// mix.postCss('resources/css/app.css', 'public/css')
+//   .tailwind();
