@@ -12,8 +12,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="/css/app.css" rel="stylesheet">
 
-    <wireui:scripts />
     <livewire:styles />
+    <wireui:scripts />
 </head>
 
 <body class="antialiased">
@@ -37,6 +37,11 @@
 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                 Ich bin ein Entwickler aus dem Raum Frankfurt.
+                                Ich bin sehr interessiert an neuen Technologien und liebe es, neue Dinge auszuprobieren.
+                                Mit Laravel selbst habe ich schon einige Erfahrung sammeln können, jedoch noch nie professionell.
+                                Wie sie sehen können, ist diese Website mit Laravel und Livewire umgesetzt.
+                                Zudem habe ich auch schon einige Projekte mit Symfony und Vue.js entwickelt.
+                                Ich bin zuversichtlich, dass ich schnell auf einem professionellen Level arbeiten kann.
                             </p>
                         </div>
 
@@ -47,14 +52,14 @@
 
                     <a href="https://github.com/hgiesel/galloverde" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex justify-evenly motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
-                            <div class="rounded-full bg-green-500 dark:bg-green-400 w-16 h-16 p-3 opacity-50">
+                            <div class="rounded-full bg-blue-500 dark:bg-blue-400 w-16 h-16 p-3 opacity-50">
                                 <x-icon name="code" />
                             </div>
 
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Source code</h2>
 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Unter diesem Link findest du den Source code für diese Website.
+                                Unter diesem Link findest du den Source code für diese Website. Die Website selbst ist auf <em>Vercel</em> gehostet.
                             </p>
                         </div>
 
@@ -72,16 +77,30 @@
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Datenbank Zugriff</h2>
 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Dieser Button ist verbunden mit einer Postgres Datenbank, welche ich auf ElephantSQL gehostet habe.
+                                Dieser Button ist verbunden mit einer Postgres Datenbank, welche ich auf <a href="https://elephantsql.com/">ElephantSQL</a> gehostet habe. Ein Klick inkrementiert den Wert in der Datenbank.
                             </p>
                         </div>
 
                         <livewire:counter />
                     </div>
 
+                    <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex justify-between motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                        <div>
+                            <div class="rounded-full bg-red-500 dark:bg-red-400 w-16 h-16 p-3 opacity-50">
+                                <x-icon name="heart" />
+                            </div>
+
+                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Interessiert?</h2>
+
+                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                Dann würde ich mich über ein Gespräch mit Ihnen freuen.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="flex justify-end mt-16 px-0 sm:items-center sm:justify-between">
+                <div class=" flex justify-end mt-16 px-0 sm:items-center sm:justify-between">
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
