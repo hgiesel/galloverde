@@ -3,6 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
+        "prebuild": "composer install",
         "build": "vite build",
         "postbuild": "mix",
         "watch": "mix watch",
