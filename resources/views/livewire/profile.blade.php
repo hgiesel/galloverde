@@ -1,3 +1,1 @@
-<div class="rounded">
-    <img src="{{url('/me.jpg')}}" alt="Image"/>
-</div>
+<img class="rounded-full" src="{{url('/me.jpg')}}" alt="Image"/>
