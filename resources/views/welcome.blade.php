@@ -27,7 +27,7 @@
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                    <a href="https://linkedin.com/in/henrik-giesel" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <a href="https://linkedin.com/in/henrik-giesel" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex justify-between motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
                             <div class="rounded-full bg-amber-500 dark:bg-amber-400 w-16 h-16 p-3 opacity-50">
                                 <x-icon name="user" />
@@ -45,7 +45,7 @@
                         </svg>
                     </a>
 
-                    <a href="https://github.com/hgiesel/galloverde" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                    <a href="https://github.com/hgiesel/galloverde" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex justify-evenly motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
                             <div class="rounded-full bg-green-500 dark:bg-green-400 w-16 h-16 p-3 opacity-50">
                                 <x-icon name="code" />
@@ -62,6 +62,22 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                         </svg>
                     </a>
+
+                    <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex justify-between motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                        <div>
+                            <div class="rounded-full bg-green-500 dark:bg-green-400 w-16 h-16 p-3 opacity-50">
+                                <x-icon name="database" />
+                            </div>
+
+                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Datenbank Zugriff</h2>
+
+                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                Dieser Button ist verbunden mit einer Postgres Datenbank, welche ich auf ElephantSQL gehostet habe.
+                            </p>
+                        </div>
+
+                        <livewire:counter />
+                    </div>
 
                 </div>
 

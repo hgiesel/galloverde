@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -11,10 +12,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Counter', function (Blueprint $table) {
+        Schema::create('counters', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
             $table->integer('counter');
         });
+
+        DB::table('counters')->insert([
+            'counter' => 0,
+        ]);
     }
 
     /**
@@ -22,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('Counter');
+        Schema::dropIfExists('counters');
     }
 };

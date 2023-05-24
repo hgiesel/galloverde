@@ -12,7 +12,5 @@ class Counter extends Model
     public $incrementing = true;
 
 
-
     use HasFactory;
-
 }
